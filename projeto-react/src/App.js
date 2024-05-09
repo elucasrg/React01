@@ -16,7 +16,7 @@ function App() {
       <Link to="/contatos">Contatos</Link>
     </div>
     <Switch>
-      <Container>
+      <Container customClass="min-height">
         <Route  exact path="/">
           <Sobre />
         </Route>
