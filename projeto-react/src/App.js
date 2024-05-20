@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Switch, Route, link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Sobre from './components/pages/Sobre'
-import Skills from './components/pages/skills'
+import Skills from './components/pages/Skills'
 import Projetos from './components/pages/Projetos'
 import Contatos from './components/pages/Contatos'
 
@@ -10,12 +10,14 @@ function App() {
   return (
   <Router>
     <div>
-      <Link to="/">Sobre Mim</Link>
-      <Link to="/skills">Skills</Link>
-      <Link to="/projetos">Projetos</Link>
-      <Link to="/contatos">Contatos</Link>
+      <nav>
+        <Link to="/">Sobre Mim</Link>
+        <Link to="/skills">Skills</Link>
+        <Link to="/projetos">Projetos</Link>
+        <Link to="/contatos">Contatos</Link>
+      </nav>
     </div>
-    <Switch>
+    <Routes>
       <Container customClass="min-height">
         <Route  exact path="/">
           <Sobre />
@@ -31,7 +33,7 @@ function App() {
         </Route>
       </Container>  
     
-    </Switch>
+    </Routes>
     <p>Footer</p>
   </Router>
   );
