@@ -10,12 +10,12 @@ function App() {
   return (
   <Router>
     <div>
-      <nav>
-        <Link to="/">Sobre Mim</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/projetos">Projetos</Link>
-        <Link to="/contatos">Contatos</Link>
-      </nav>
+      
+      <Link to="/">Sobre Mim</Link>
+      <Link to="/skills">Skills</Link>
+      <Link to="/projetos">Projetos</Link>
+      <Link to="/contatos">Contatos</Link>
+      
     </div>
     <Routes>
       <Container customClass="min-height">
